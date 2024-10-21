@@ -25,8 +25,6 @@ int main(int argc, char *argv[])
 			if((read(fd, (char *) &record, sizeof(record)) > 0) && (record.id != 0))
 				printf("%-8s %-8s  %-4s %-4s %-4s %-4s", "id","bookname","author","year","numofborrow","borrow");
 			
-
-
 		}
 	}
 close(fd);
