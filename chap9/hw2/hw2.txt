@@ -1,0 +1,17 @@
+(echo START1; sleep 10; echo DONE1) &
+백그라운드에서 실행
+출력은 START1이 먼저 출력 10초 후에 DONE1 출력됨
+
+(echo START2: sleep 10; echo DONE2) &
+백그라운드에서 실행
+출력은 START2이 먼저 출력 10초 후에 DONE2 출력됨
+
+kill -KILL 첫 번째 프로세스
+첫번째 프로세스 강제 종료 DONE1은 출력되지 않고 프로세스 중단
+
+kill -STOP
+프로세스 일시 정지
+프로세스가 멈추면 DONE1은 출력되지 않고 실행은 중지
+
+kill -CONT
+프로세스 재개하고 중지된 프로세스 계속 진행
