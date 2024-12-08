@@ -5,7 +5,7 @@
 
 void intHandler();
 
-int main( )
+int main()
 {
    signal(SIGINT,intHandler);
    while (1)

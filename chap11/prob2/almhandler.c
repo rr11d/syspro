@@ -5,7 +5,7 @@
 
 void alarmHandler();
 
-int main( )
+int main()
 {
   signal(SIGALRM, alarmHandler);
   alarm(5);

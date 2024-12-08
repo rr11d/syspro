@@ -6,7 +6,7 @@ struct sigaction newact;
 struct sigaction oldact;
 void sigint_handler(int signo); 
 
-int main( void)
+int main(void)
 {
      newact.sa_handler = sigint_handler;
      sigfillset(&newact.sa_mask);

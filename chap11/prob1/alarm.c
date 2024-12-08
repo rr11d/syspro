@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int main( )
+int main()
 {
    alarm(5);
    printf("Loop start\n");
